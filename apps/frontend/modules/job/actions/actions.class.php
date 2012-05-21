@@ -15,12 +15,14 @@ class jobActions extends sfActions
     $this->jobeet_jobs = Doctrine_Core::getTable('JobeetJob')
       ->createQuery('a')
       ->execute();
+  $this->foo = 'bar';
+  $this->bar = array('bar', 'baz');
   }
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->jobeet_job = Doctrine_Core::getTable('JobeetJob')->find(array($request->getParameter('id')));
-    $this->forward404Unless($this->jobeet_job);
+    $this->job = Doctrine_Core::getTable('JobeetJob')->find(array($request->getParameter('id')));
+    $this->forward404Unless($this->job);
   }
 
   public function executeNew(sfWebRequest $request)
@@ -41,15 +43,15 @@ class jobActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($jobeet_job = Doctrine_Core::getTable('JobeetJob')->find(array($request->getParameter('id'))), sprintf('Object jobeet_job does not exist (%s).', $request->getParameter('id')));
-    $this->form = new JobeetJobForm($jobeet_job);
+    $this->forward404Unless($job = Doctrine_Core::getTable('JobeetJob')->find(array($request->getParameter('id'))), sprintf('Object jobeet_job does not exist (%s).', $request->getParameter('id')));
+    $this->form = new JobeetJobForm($job);
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($jobeet_job = Doctrine_Core::getTable('JobeetJob')->find(array($request->getParameter('id'))), sprintf('Object jobeet_job does not exist (%s).', $request->getParameter('id')));
-    $this->form = new JobeetJobForm($jobeet_job);
+    $this->forward404Unless($job = Doctrine_Core::getTable('JobeetJob')->find(array($request->getParameter('id'))), sprintf('Object jobeet_job does not exist (%s).', $request->getParameter('id')));
+    $this->form = new JobeetJobForm($job);
 
     $this->processForm($request, $this->form);
 
@@ -71,9 +73,9 @@ class jobActions extends sfActions
     $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
     if ($form->isValid())
     {
-      $jobeet_job = $form->save();
+      $job = $form->save();
 
-      $this->redirect('job/edit?id='.$jobeet_job->getId());
+      $this->redirect('job/edit?id='.$job->getId());
     }
   }
 }
