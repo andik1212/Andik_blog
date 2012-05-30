@@ -12,16 +12,19 @@ class jobActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->jobeet_jobs = Doctrine_Core::getTable('JobeetJob')
-      ->createQuery('a')
-      ->execute();
+  $q = Doctrine_Query::create()
+    ->from('JobeetJob j')
+    ->where('j.expires_at > ?', date('Y-m-d h:i:s', time()));
+ 
+  $this->jobeet_jobs = $q->execute();
   $this->foo = 'bar';
   $this->bar = array('bar', 'baz');
   }
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->job = Doctrine_Core::getTable('JobeetJob')->find(array($request->getParameter('id')));
+    $this->job = $this->getRoute()->getObject();
+ 
     $this->forward404Unless($this->job);
   }
 
