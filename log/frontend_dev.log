@@ -2151,3 +2151,719 @@ May 30 14:58:06 symfony [info] {sfWebDebugLogger} Action "job/index" 121.99 ms (
 May 30 14:58:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
 May 30 14:58:06 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 101.54 ms (1)
 May 30 14:58:06 symfony [info] {sfWebResponse} Send content (34550 o)
+May 30 17:08:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 30 17:08:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 17:08:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 17:08:02 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 17:08:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 17:08:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.expires_at > ?) ORDER BY j.expires_at DESC - (2012-05-30 05:08:03)
+May 30 17:08:05 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 17:08:05 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 17:08:05 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 17:08:05 symfony [info] {main} Get slot "title"
+May 30 17:08:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 17:08:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 17:08:05 symfony [info] {sfWebDebugLogger} Configuration 14.30 ms (9)
+May 30 17:08:05 symfony [info] {sfWebDebugLogger} Factories 1155.73 ms (1)
+May 30 17:08:05 symfony [info] {sfWebDebugLogger} Action "job/index" 2159.25 ms (1)
+May 30 17:08:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 30 17:08:05 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 432.17 ms (1)
+May 30 17:08:05 symfony [info] {sfWebResponse} Send content (34591 o)
+May 30 21:14:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 30 21:14:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 21:14:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 21:14:10 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 21:14:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 21:14:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-30 09:14:11)
+May 30 21:14:13 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 21:14:13 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "active_jobs" on "JobeetCategory"
+May 30 21:14:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 30 21:14:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 21:14:13 symfony [info] {sfWebDebugLogger} Configuration 4.38 ms (9)
+May 30 21:14:13 symfony [info] {sfWebDebugLogger} Factories 1374.14 ms (1)
+May 30 21:14:13 symfony [info] {sfWebDebugLogger} Action "job/index" 2396.00 ms (1)
+May 30 21:14:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 30 21:14:13 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 811.67 ms (1)
+May 30 21:14:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 30 21:14:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 21:14:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 21:14:37 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 21:14:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 21:14:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-30 09:14:38)
+May 30 21:14:38 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 21:14:38 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "active_jobs" on "JobeetCategory"
+May 30 21:14:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 30 21:14:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 21:14:38 symfony [info] {sfWebDebugLogger} Configuration 6.16 ms (9)
+May 30 21:14:38 symfony [info] {sfWebDebugLogger} Factories 174.09 ms (1)
+May 30 21:14:38 symfony [info] {sfWebDebugLogger} Action "job/index" 263.15 ms (1)
+May 30 21:14:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 30 21:14:38 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 328.22 ms (1)
+May 30 21:14:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/ощи" (/).
+May 30 21:14:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 30 21:14:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 21:14:45 symfony [info] {sfWebDebugLogger} Configuration 2.26 ms (5)
+May 30 21:14:45 symfony [info] {sfWebDebugLogger} Factories 104.89 ms (1)
+May 30 21:14:51 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 30 21:14:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 21:14:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 21:14:51 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 21:14:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 21:14:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-30 09:14:51)
+May 30 21:14:51 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 21:14:51 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "active_jobs" on "JobeetCategory"
+May 30 21:14:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 30 21:14:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 21:14:51 symfony [info] {sfWebDebugLogger} Configuration 3.92 ms (9)
+May 30 21:14:51 symfony [info] {sfWebDebugLogger} Factories 116.38 ms (1)
+May 30 21:14:51 symfony [info] {sfWebDebugLogger} Action "job/index" 170.64 ms (1)
+May 30 21:14:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 30 21:14:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 249.29 ms (1)
+May 30 21:14:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 30 21:14:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 21:14:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 21:14:59 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 21:14:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 21:14:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-30 09:14:59)
+May 30 21:14:59 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 21:14:59 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "active_jobs" on "JobeetCategory"
+May 30 21:14:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 30 21:14:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 21:14:59 symfony [info] {sfWebDebugLogger} Configuration 4.37 ms (9)
+May 30 21:14:59 symfony [info] {sfWebDebugLogger} Factories 247.53 ms (1)
+May 30 21:14:59 symfony [info] {sfWebDebugLogger} Action "job/index" 380.24 ms (1)
+May 30 21:14:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 30 21:14:59 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 258.46 ms (1)
+May 30 21:16:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 30 21:16:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 21:16:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 21:16:48 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 21:16:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 21:16:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-30 09:16:49)
+May 30 21:16:50 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 21:16:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.expires_at > ?) ORDER BY j.expires_at DESC - (2012-05-30 09:16:50)
+May 30 21:16:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.expires_at > ?) ORDER BY j.expires_at DESC - (2012-05-30 09:16:50)
+May 30 21:16:50 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 21:16:50 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 21:16:50 symfony [info] {main} Get slot "title"
+May 30 21:16:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 21:16:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 21:16:50 symfony [info] {sfWebDebugLogger} Configuration 3.37 ms (9)
+May 30 21:16:50 symfony [info] {sfWebDebugLogger} Factories 1406.74 ms (1)
+May 30 21:16:50 symfony [info] {sfWebDebugLogger} Action "job/index" 1262.00 ms (1)
+May 30 21:16:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (4)
+May 30 21:16:50 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 265.10 ms (1)
+May 30 21:16:50 symfony [info] {sfWebResponse} Send content (42960 o)
+May 30 21:21:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 30 21:21:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 21:21:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 21:21:39 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 21:21:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 21:21:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-30 09:21:39)
+May 30 21:21:39 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 21:21:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC - (14, 2012-05-30 09:21:39)
+May 30 21:21:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC - (13, 2012-05-30 09:21:39)
+May 30 21:21:39 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 21:21:39 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 21:21:39 symfony [info] {main} Get slot "title"
+May 30 21:21:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 21:21:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 21:21:39 symfony [info] {sfWebDebugLogger} Configuration 4.10 ms (9)
+May 30 21:21:39 symfony [info] {sfWebDebugLogger} Factories 98.86 ms (1)
+May 30 21:21:39 symfony [info] {sfWebDebugLogger} Action "job/index" 311.57 ms (1)
+May 30 21:21:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (4)
+May 30 21:21:39 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 175.83 ms (1)
+May 30 21:21:39 symfony [info] {sfWebResponse} Send content (42490 o)
+May 30 21:21:56 symfony [info] {sfPatternRouting} Match route "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug) for /job/extreme-sensio/paris-france/10/web-designer with parameters array (  'module' => 'job',  'action' => 'show',  'company_slug' => 'extreme-sensio',  'location_slug' => 'paris-france',  'id' => '10',  'position_slug' => 'web-designer',)
+May 30 21:21:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 21:21:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 21:21:56 symfony [info] {jobActions} Call "jobActions->executeShow()"
+May 30 21:21:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 21:21:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) - (10)
+May 30 21:21:57 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/showSuccess.php"
+May 30 21:21:57 symfony [info] {main} Set slot "title"
+May 30 21:21:57 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 21:21:57 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 21:21:57 symfony [info] {main} Get slot "title"
+May 30 21:21:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 21:21:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 21:21:57 symfony [info] {sfWebDebugLogger} Configuration 4.42 ms (9)
+May 30 21:21:57 symfony [info] {sfWebDebugLogger} Factories 828.56 ms (1)
+May 30 21:21:57 symfony [info] {sfWebDebugLogger} Action "job/show" 675.12 ms (1)
+May 30 21:21:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 30 21:21:57 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 295.36 ms (1)
+May 30 21:21:58 symfony [info] {sfWebResponse} Send content (35631 o)
+May 30 22:02:54 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 30 22:02:54 symfony [info] {myUser} Automatic user logout due to timeout
+May 30 22:02:54 symfony [info] {myUser} User is not authenticated
+May 30 22:02:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 22:02:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 22:02:55 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 22:02:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 22:02:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-30 10:02:55)
+May 30 22:02:55 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 22:02:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (14, 2012-05-30 10:02:55)
+May 30 22:02:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (13, 2012-05-30 10:02:55)
+May 30 22:02:55 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 22:02:55 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 22:02:55 symfony [info] {main} Get slot "title"
+May 30 22:02:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 22:02:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 22:02:55 symfony [info] {sfWebDebugLogger} Configuration 185.84 ms (10)
+May 30 22:02:55 symfony [info] {sfWebDebugLogger} Factories 283.91 ms (1)
+May 30 22:02:55 symfony [info] {sfWebDebugLogger} Action "job/index" 510.74 ms (1)
+May 30 22:02:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (4)
+May 30 22:02:55 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 242.55 ms (1)
+May 30 22:02:55 symfony [info] {sfWebResponse} Send content (43427 o)
+May 30 22:06:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 30 22:06:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 22:06:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 22:06:09 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 22:06:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 30 22:06:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-30 10:06:10)
+May 30 22:06:10 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 30 22:06:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (17, 2012-05-30 10:06:10)
+May 30 22:06:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (18, 2012-05-30 10:06:10)
+May 30 22:06:10 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 22:06:10 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 30 22:06:10 symfony [info] {main} Get slot "title"
+May 30 22:06:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 22:06:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 22:06:10 symfony [info] {sfWebDebugLogger} Configuration 4.98 ms (9)
+May 30 22:06:10 symfony [info] {sfWebDebugLogger} Factories 117.79 ms (1)
+May 30 22:06:10 symfony [info] {sfWebDebugLogger} Action "job/index" 486.99 ms (1)
+May 30 22:06:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (4)
+May 30 22:06:10 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 161.49 ms (1)
+May 30 22:06:10 symfony [info] {sfWebResponse} Send content (45256 o)
+May 31 09:22:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:22:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:22:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:22:14 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:22:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:22:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:22:15)
+May 31 09:22:16 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:23:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:23:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:23:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:23:11 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:23:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:23:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:23:11)
+May 31 09:23:11 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:23:15 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:23:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:23:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:23:16 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:23:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:23:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:23:16)
+May 31 09:23:16 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:23:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:23:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:23:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:23:22 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:23:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:23:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:23:23)
+May 31 09:23:24 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:23:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:23:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:23:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:23:40 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:23:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:23:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:23:41)
+May 31 09:23:42 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:24:04 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 31 09:24:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:24:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:24:04 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:24:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:24:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:24:04)
+May 31 09:24:04 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:24:08 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:24:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:24:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:24:08 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:24:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:24:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:24:09)
+May 31 09:24:09 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:24:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:24:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:24:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:24:43 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:24:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:24:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:24:43)
+May 31 09:24:44 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:24:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (17, 2012-05-31 09:24:44)
+May 31 09:24:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (18, 2012-05-31 09:24:44)
+May 31 09:24:44 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:24:44 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:24:44 symfony [info] {main} Get slot "title"
+May 31 09:24:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:24:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:24:45 symfony [info] {sfWebDebugLogger} Configuration 21.56 ms (9)
+May 31 09:24:45 symfony [info] {sfWebDebugLogger} Factories 432.62 ms (1)
+May 31 09:24:45 symfony [info] {sfWebDebugLogger} Action "job/index" 1236.36 ms (1)
+May 31 09:24:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.13 ms (4)
+May 31 09:24:45 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 492.25 ms (1)
+May 31 09:24:45 symfony [info] {sfWebResponse} Send content (45267 o)
+May 31 09:25:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:25:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:25:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:25:43 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:25:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:25:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:25:43)
+May 31 09:25:44 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:25:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (17, 2012-05-31 09:25:45)
+May 31 09:25:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (18, 2012-05-31 09:25:45)
+May 31 09:25:45 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:25:45 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:25:45 symfony [info] {main} Get slot "title"
+May 31 09:25:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:25:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:25:45 symfony [info] {sfWebDebugLogger} Configuration 5.87 ms (9)
+May 31 09:25:45 symfony [info] {sfWebDebugLogger} Factories 907.34 ms (1)
+May 31 09:25:45 symfony [info] {sfWebDebugLogger} Action "job/index" 1517.38 ms (1)
+May 31 09:25:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (4)
+May 31 09:25:45 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 665.37 ms (1)
+May 31 09:25:45 symfony [info] {sfWebResponse} Send content (45288 o)
+May 31 09:25:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:25:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:25:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:25:56 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:25:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:25:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:25:58)
+May 31 09:25:59 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:25:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (17, 2012-05-31 09:25:59)
+May 31 09:25:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (18, 2012-05-31 09:25:59)
+May 31 09:25:59 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:25:59 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:25:59 symfony [info] {main} Get slot "title"
+May 31 09:25:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:25:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:25:59 symfony [info] {sfWebDebugLogger} Configuration 4.69 ms (9)
+May 31 09:25:59 symfony [info] {sfWebDebugLogger} Factories 2066.35 ms (1)
+May 31 09:25:59 symfony [info] {sfWebDebugLogger} Action "job/index" 2544.54 ms (1)
+May 31 09:25:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (4)
+May 31 09:25:59 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 198.58 ms (1)
+May 31 09:25:59 symfony [info] {sfWebResponse} Send content (45331 o)
+May 31 09:26:29 symfony [info] {sfPatternRouting} Match route "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug) for /job/sensio-labs/paris-france/12/web-developer with parameters array (  'module' => 'job',  'action' => 'show',  'company_slug' => 'sensio-labs',  'location_slug' => 'paris-france',  'id' => '12',  'position_slug' => 'web-developer',)
+May 31 09:26:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:26:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:26:29 symfony [info] {jobActions} Call "jobActions->executeShow()"
+May 31 09:26:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:26:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) - (12)
+May 31 09:26:29 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/showSuccess.php"
+May 31 09:26:29 symfony [info] {main} Set slot "title"
+May 31 09:26:29 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:26:29 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:26:29 symfony [info] {main} Get slot "title"
+May 31 09:26:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:26:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:26:29 symfony [info] {sfWebDebugLogger} Configuration 6.24 ms (9)
+May 31 09:26:29 symfony [info] {sfWebDebugLogger} Factories 297.39 ms (1)
+May 31 09:26:29 symfony [info] {sfWebDebugLogger} Action "job/show" 450.18 ms (1)
+May 31 09:26:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+May 31 09:26:29 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 170.36 ms (1)
+May 31 09:26:30 symfony [info] {sfWebResponse} Send content (35445 o)
+May 31 09:26:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:26:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:26:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:26:39 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:26:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:26:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:26:40)
+May 31 09:26:41 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:26:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (17, 2012-05-31 09:26:41)
+May 31 09:26:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (18, 2012-05-31 09:26:41)
+May 31 09:26:41 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:26:41 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:26:41 symfony [info] {main} Get slot "title"
+May 31 09:26:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:26:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:26:41 symfony [info] {sfWebDebugLogger} Configuration 4.25 ms (9)
+May 31 09:26:41 symfony [info] {sfWebDebugLogger} Factories 676.86 ms (1)
+May 31 09:26:41 symfony [info] {sfWebDebugLogger} Action "job/index" 1620.46 ms (1)
+May 31 09:26:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (4)
+May 31 09:26:41 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 434.44 ms (1)
+May 31 09:26:41 symfony [info] {sfWebResponse} Send content (45331 o)
+May 31 09:44:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:44:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:44:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:44:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:44:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:44:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:44:23)
+May 31 09:44:25 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:44:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (17, 2012-05-31 09:44:25)
+May 31 09:44:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (17, 2012-05-31 09:44:25)
+May 31 09:44:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (18, 2012-05-31 09:44:25)
+May 31 09:44:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (18, 2012-05-31 09:44:25)
+May 31 09:44:25 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:44:25 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:44:25 symfony [info] {main} Get slot "title"
+May 31 09:44:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:44:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:44:25 symfony [info] {sfWebDebugLogger} Configuration 319.88 ms (10)
+May 31 09:44:25 symfony [info] {sfWebDebugLogger} Factories 879.22 ms (1)
+May 31 09:44:25 symfony [info] {sfWebDebugLogger} Action "job/index" 1197.54 ms (1)
+May 31 09:44:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (6)
+May 31 09:44:25 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 505.32 ms (1)
+May 31 09:44:25 symfony [info] {sfWebResponse} Send content (48021 o)
+May 31 09:44:27 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/design with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'design',)
+May 31 09:44:27 symfony [info] {sfFrontWebController} Action "category/show" does not exist
+May 31 09:44:27 symfony [err] {sfError404Exception} Action "category/show" does not exist.
+May 31 09:44:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 31 09:44:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:44:27 symfony [info] {sfWebDebugLogger} Configuration 2.38 ms (5)
+May 31 09:44:27 symfony [info] {sfWebDebugLogger} Factories 111.14 ms (1)
+May 31 09:50:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:50:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:50:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:50:53 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:50:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:50:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:50:54)
+May 31 09:50:54 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:50:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (1, 2012-05-31 09:50:54)
+May 31 09:50:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (1, 2012-05-31 09:50:54)
+May 31 09:50:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 09:50:54)
+May 31 09:50:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 09:50:54)
+May 31 09:50:54 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:50:54 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:50:54 symfony [info] {main} Get slot "title"
+May 31 09:50:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:50:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:50:54 symfony [info] {sfWebDebugLogger} Configuration 4.01 ms (9)
+May 31 09:50:54 symfony [info] {sfWebDebugLogger} Factories 122.25 ms (1)
+May 31 09:50:54 symfony [info] {sfWebDebugLogger} Action "job/index" 251.20 ms (1)
+May 31 09:50:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (6)
+May 31 09:50:54 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 221.04 ms (1)
+May 31 09:50:54 symfony [info] {sfWebResponse} Send content (48122 o)
+May 31 09:56:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:56:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:56:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:56:07 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:56:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:56:07)
+May 31 09:56:07 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (1, 2012-05-31 09:56:07)
+May 31 09:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (1, 2012-05-31 09:56:07)
+May 31 09:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 09:56:07)
+May 31 09:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 09:56:07)
+May 31 09:56:07 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:56:07 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:56:07 symfony [info] {main} Get slot "title"
+May 31 09:56:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:56:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:56:07 symfony [info] {sfWebDebugLogger} Configuration 4.11 ms (9)
+May 31 09:56:07 symfony [info] {sfWebDebugLogger} Factories 103.66 ms (1)
+May 31 09:56:07 symfony [info] {sfWebDebugLogger} Action "job/index" 403.69 ms (1)
+May 31 09:56:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (6)
+May 31 09:56:07 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 212.05 ms (1)
+May 31 09:56:07 symfony [info] {sfWebResponse} Send content (48122 o)
+May 31 09:56:11 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 09:56:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:56:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:56:12 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 09:56:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:56:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 09:56:13 symfony [err] {sfError404Exception} Unable to find the JobeetCategory object with the following parameters "array (  'slug' => 'programming',)").
+May 31 09:56:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 31 09:56:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:56:14 symfony [info] {sfWebDebugLogger} Configuration 479.30 ms (9)
+May 31 09:56:14 symfony [info] {sfWebDebugLogger} Factories 947.67 ms (1)
+May 31 09:56:14 symfony [info] {sfWebDebugLogger} Action "category/show" 1466.87 ms (1)
+May 31 09:56:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 31 09:56:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:56:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:56:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:56:50 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:56:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:56:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:56:50)
+May 31 09:56:50 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:56:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (1, 2012-05-31 09:56:50)
+May 31 09:56:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (1, 2012-05-31 09:56:51)
+May 31 09:56:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 09:56:51)
+May 31 09:56:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 09:56:51)
+May 31 09:56:51 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:56:51 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:56:51 symfony [info] {main} Get slot "title"
+May 31 09:56:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:56:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:56:51 symfony [info] {sfWebDebugLogger} Configuration 4.35 ms (9)
+May 31 09:56:51 symfony [info] {sfWebDebugLogger} Factories 107.07 ms (1)
+May 31 09:56:51 symfony [info] {sfWebDebugLogger} Action "job/index" 310.76 ms (1)
+May 31 09:56:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.32 ms (6)
+May 31 09:56:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 223.77 ms (1)
+May 31 09:56:51 symfony [info] {sfWebResponse} Send content (48091 o)
+May 31 09:56:54 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 09:56:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:56:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:56:54 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 09:56:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:56:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 09:56:55 symfony [err] {sfError404Exception} Unable to find the JobeetCategory object with the following parameters "array (  'slug' => 'programming',)").
+May 31 09:56:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 31 09:56:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:56:55 symfony [info] {sfWebDebugLogger} Configuration 3.86 ms (8)
+May 31 09:56:55 symfony [info] {sfWebDebugLogger} Factories 115.56 ms (1)
+May 31 09:56:55 symfony [info] {sfWebDebugLogger} Action "category/show" 192.98 ms (1)
+May 31 09:56:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 31 09:58:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 09:58:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:58:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:58:32 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 09:58:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:58:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 09:58:33)
+May 31 09:58:33 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 09:58:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (1, 2012-05-31 09:58:33)
+May 31 09:58:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (1, 2012-05-31 09:58:33)
+May 31 09:58:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 09:58:33)
+May 31 09:58:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 09:58:33)
+May 31 09:58:33 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:58:33 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 09:58:33 symfony [info] {main} Get slot "title"
+May 31 09:58:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 09:58:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:58:33 symfony [info] {sfWebDebugLogger} Configuration 4.68 ms (9)
+May 31 09:58:33 symfony [info] {sfWebDebugLogger} Factories 428.12 ms (1)
+May 31 09:58:33 symfony [info] {sfWebDebugLogger} Action "job/index" 849.40 ms (1)
+May 31 09:58:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.11 ms (6)
+May 31 09:58:33 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 284.06 ms (1)
+May 31 09:58:33 symfony [info] {sfWebResponse} Send content (48123 o)
+May 31 09:58:36 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 09:58:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:58:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:58:36 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 09:58:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:58:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 09:58:36 symfony [err] {sfError404Exception} Unable to find the JobeetCategory object with the following parameters "array (  'slug' => 'programming',)").
+May 31 09:58:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 31 09:58:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:58:36 symfony [info] {sfWebDebugLogger} Configuration 3.57 ms (8)
+May 31 09:58:36 symfony [info] {sfWebDebugLogger} Factories 133.34 ms (1)
+May 31 09:58:36 symfony [info] {sfWebDebugLogger} Action "category/show" 171.20 ms (1)
+May 31 09:58:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 31 09:58:54 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/design with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'design',)
+May 31 09:58:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 09:58:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 09:58:54 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 09:58:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 09:58:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (design)
+May 31 09:58:54 symfony [err] {sfError404Exception} Unable to find the JobeetCategory object with the following parameters "array (  'slug' => 'design',)").
+May 31 09:58:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 31 09:58:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 09:58:54 symfony [info] {sfWebDebugLogger} Configuration 3.14 ms (8)
+May 31 09:58:54 symfony [info] {sfWebDebugLogger} Factories 99.33 ms (1)
+May 31 09:58:54 symfony [info] {sfWebDebugLogger} Action "category/show" 194.27 ms (1)
+May 31 09:58:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 31 10:01:31 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/design with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'design',)
+May 31 10:01:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:01:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:01:31 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 10:01:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:01:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (design)
+May 31 10:01:31 symfony [err] {sfError404Exception} Unable to find the JobeetCategory object with the following parameters "array (  'slug' => 'design',)").
+May 31 10:01:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 31 10:01:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:01:31 symfony [info] {sfWebDebugLogger} Configuration 3.23 ms (8)
+May 31 10:01:31 symfony [info] {sfWebDebugLogger} Factories 90.87 ms (1)
+May 31 10:01:31 symfony [info] {sfWebDebugLogger} Action "category/show" 357.81 ms (1)
+May 31 10:01:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 31 10:01:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 10:01:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:01:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:01:37 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 10:01:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:01:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 10:01:37)
+May 31 10:01:37 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 10:01:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (1, 2012-05-31 10:01:37)
+May 31 10:01:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (1, 2012-05-31 10:01:37)
+May 31 10:01:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 10:01:37)
+May 31 10:01:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 10:01:37)
+May 31 10:01:37 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:01:37 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:01:37 symfony [info] {main} Get slot "title"
+May 31 10:01:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:01:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:01:37 symfony [info] {sfWebDebugLogger} Configuration 3.92 ms (9)
+May 31 10:01:37 symfony [info] {sfWebDebugLogger} Factories 109.26 ms (1)
+May 31 10:01:37 symfony [info] {sfWebDebugLogger} Action "job/index" 256.76 ms (1)
+May 31 10:01:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.11 ms (6)
+May 31 10:01:37 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 351.45 ms (1)
+May 31 10:01:38 symfony [info] {sfWebResponse} Send content (48091 o)
+May 31 10:01:40 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 10:01:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:01:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:01:40 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 10:01:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:01:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 10:01:40)
+May 31 10:01:40 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 10:01:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (1, 2012-05-31 10:01:40)
+May 31 10:01:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (1, 2012-05-31 10:01:41)
+May 31 10:01:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 10:01:41)
+May 31 10:01:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 10:01:41)
+May 31 10:01:41 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:01:41 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:01:41 symfony [info] {main} Get slot "title"
+May 31 10:01:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:01:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:01:41 symfony [info] {sfWebDebugLogger} Configuration 4.17 ms (9)
+May 31 10:01:41 symfony [info] {sfWebDebugLogger} Factories 125.82 ms (1)
+May 31 10:01:41 symfony [info] {sfWebDebugLogger} Action "job/index" 288.17 ms (1)
+May 31 10:01:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (6)
+May 31 10:01:41 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 195.29 ms (1)
+May 31 10:01:41 symfony [info] {sfWebResponse} Send content (48091 o)
+May 31 10:01:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 10:01:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:01:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:01:48 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 10:01:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:01:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 10:01:48)
+May 31 10:01:48 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 10:01:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (1, 2012-05-31 10:01:48)
+May 31 10:01:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (1, 2012-05-31 10:01:48)
+May 31 10:01:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 10:01:48)
+May 31 10:01:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 10:01:48)
+May 31 10:01:48 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:01:48 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:01:48 symfony [info] {main} Get slot "title"
+May 31 10:01:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:01:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:01:48 symfony [info] {sfWebDebugLogger} Configuration 3.94 ms (9)
+May 31 10:01:48 symfony [info] {sfWebDebugLogger} Factories 1190.07 ms (1)
+May 31 10:01:48 symfony [info] {sfWebDebugLogger} Action "job/index" 538.60 ms (1)
+May 31 10:01:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (6)
+May 31 10:01:48 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 248.42 ms (1)
+May 31 10:01:49 symfony [info] {sfWebResponse} Send content (48092 o)
+May 31 10:01:56 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 10:01:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:01:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:01:56 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 10:01:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:01:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 10:01:56 symfony [err] {sfError404Exception} Unable to find the JobeetCategory object with the following parameters "array (  'slug' => 'programming',)").
+May 31 10:01:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 31 10:01:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:01:57 symfony [info] {sfWebDebugLogger} Configuration 3.83 ms (8)
+May 31 10:01:57 symfony [info] {sfWebDebugLogger} Factories 267.04 ms (1)
+May 31 10:01:57 symfony [info] {sfWebDebugLogger} Action "category/show" 255.25 ms (1)
+May 31 10:01:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 31 10:12:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 31 10:12:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:12:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:12:52 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 31 10:12:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:12:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug, j2.id AS j2__id, j2.category_id AS j2__category_id, j2.type AS j2__type, j2.company AS j2__company, j2.logo AS j2__logo, j2.url AS j2__url, j2.position AS j2__position, j2.location AS j2__location, j2.description AS j2__description, j2.how_to_apply AS j2__how_to_apply, j2.token AS j2__token, j2.is_public AS j2__is_public, j2.is_activated AS j2__is_activated, j2.email AS j2__email, j2.expires_at AS j2__expires_at, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at FROM jobeet_category j LEFT JOIN jobeet_job j2 ON j.id = j2.category_id WHERE (j2.expires_at > ?) - (2012-05-31 10:12:53)
+May 31 10:12:55 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/job/templates/indexSuccess.php"
+May 31 10:12:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (1, 2012-05-31 10:12:55)
+May 31 10:12:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (1, 2012-05-31 10:12:55)
+May 31 10:12:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 10:12:55)
+May 31 10:12:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 10:12:55)
+May 31 10:12:55 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:12:55 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:12:55 symfony [info] {main} Get slot "title"
+May 31 10:12:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:12:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:12:55 symfony [info] {sfWebDebugLogger} Configuration 17.30 ms (9)
+May 31 10:12:55 symfony [info] {sfWebDebugLogger} Factories 1627.69 ms (1)
+May 31 10:12:55 symfony [info] {sfWebDebugLogger} Action "job/index" 2096.67 ms (1)
+May 31 10:12:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (6)
+May 31 10:12:55 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 509.14 ms (1)
+May 31 10:12:55 symfony [info] {sfWebResponse} Send content (48125 o)
+May 31 10:13:03 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 10:13:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:13:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:13:03 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 10:13:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:13:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 10:13:03 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/category/templates/showSuccess.php"
+May 31 10:13:03 symfony [info] {main} Set slot "title"
+May 31 10:13:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 10:13:03)
+May 31 10:13:03 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:13:03 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:13:03 symfony [info] {main} Get slot "title"
+May 31 10:13:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:13:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:13:03 symfony [info] {sfWebDebugLogger} Configuration 183.04 ms (10)
+May 31 10:13:03 symfony [info] {sfWebDebugLogger} Factories 243.35 ms (1)
+May 31 10:13:03 symfony [info] {sfWebDebugLogger} Action "category/show" 194.97 ms (1)
+May 31 10:13:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+May 31 10:13:03 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 398.88 ms (1)
+May 31 10:13:04 symfony [info] {sfWebResponse} Send content (39255 o)
+May 31 10:16:06 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 10:16:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:16:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:16:06 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 10:16:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:16:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 10:16:07 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/category/templates/showSuccess.php"
+May 31 10:16:07 symfony [info] {main} Set slot "title"
+May 31 10:16:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 15 - (2, 2012-05-31 10:16:07)
+May 31 10:16:07 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:16:07 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:16:07 symfony [info] {main} Get slot "title"
+May 31 10:16:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:16:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:16:07 symfony [info] {sfWebDebugLogger} Configuration 36.62 ms (9)
+May 31 10:16:07 symfony [info] {sfWebDebugLogger} Factories 480.74 ms (1)
+May 31 10:16:07 symfony [info] {sfWebDebugLogger} Action "category/show" 729.57 ms (1)
+May 31 10:16:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+May 31 10:16:07 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 397.79 ms (1)
+May 31 10:16:08 symfony [info] {sfWebResponse} Send content (40710 o)
+May 31 10:19:43 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 10:19:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:19:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:19:43 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 10:19:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:19:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 10:19:44 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/category/templates/showSuccess.php"
+May 31 10:19:44 symfony [info] {main} Set slot "title"
+May 31 10:19:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 10:19:44)
+May 31 10:19:44 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:19:44 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:19:44 symfony [info] {main} Get slot "title"
+May 31 10:19:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:19:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:19:44 symfony [info] {sfWebDebugLogger} Configuration 4.21 ms (9)
+May 31 10:19:44 symfony [info] {sfWebDebugLogger} Factories 462.51 ms (1)
+May 31 10:19:44 symfony [info] {sfWebDebugLogger} Action "category/show" 673.38 ms (1)
+May 31 10:19:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+May 31 10:19:44 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 183.72 ms (1)
+May 31 10:19:44 symfony [info] {sfWebResponse} Send content (39255 o)
+May 31 10:20:03 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 10:20:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:20:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:20:03 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 10:20:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:20:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 10:20:04 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/category/templates/showSuccess.php"
+May 31 10:20:04 symfony [info] {main} Set slot "title"
+May 31 10:20:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 10 - (2, 2012-05-31 10:20:04)
+May 31 10:20:04 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:20:04 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:20:04 symfony [info] {main} Get slot "title"
+May 31 10:20:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:20:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:20:04 symfony [info] {sfWebDebugLogger} Configuration 3.54 ms (9)
+May 31 10:20:04 symfony [info] {sfWebDebugLogger} Factories 380.37 ms (1)
+May 31 10:20:04 symfony [info] {sfWebDebugLogger} Action "category/show" 307.32 ms (1)
+May 31 10:20:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+May 31 10:20:04 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 129.36 ms (1)
+May 31 10:20:04 symfony [info] {sfWebResponse} Send content (39257 o)
+May 31 10:22:50 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+May 31 10:22:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 10:22:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 10:22:50 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+May 31 10:22:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 10:22:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j WHERE (j.slug = ?) - (programming)
+May 31 10:22:50 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/modules/category/templates/showSuccess.php"
+May 31 10:22:50 symfony [info] {main} Set slot "title"
+May 31 10:22:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_job j WHERE j.category_id = ? AND j.expires_at > ? - (2, 2012-05-31 10:22:50)
+May 31 10:22:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.category_id = ? AND j.expires_at > ?) ORDER BY j.expires_at DESC LIMIT 32 - (2, 2012-05-31 10:22:50)
+May 31 10:22:50 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:22:50 symfony [info] {sfPHPView} Render "/home/sfproject/jobeet/apps/frontend/templates/layout.php"
+May 31 10:22:50 symfony [info] {main} Get slot "title"
+May 31 10:22:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 10:22:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 10:22:50 symfony [info] {sfWebDebugLogger} Configuration 3.74 ms (9)
+May 31 10:22:50 symfony [info] {sfWebDebugLogger} Factories 87.99 ms (1)
+May 31 10:22:50 symfony [info] {sfWebDebugLogger} Action "category/show" 107.41 ms (1)
+May 31 10:22:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (4)
+May 31 10:22:50 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 219.50 ms (1)
+May 31 10:22:50 symfony [info] {sfWebResponse} Send content (46856 o)
